@@ -1,4 +1,4 @@
-Boilerplate for react application
+Digital Clock
 
 **Scripts**
 
@@ -10,4 +10,4 @@ Boilerplate for react application
 
 `deploy` - deploy 'dist' folder to GH pages
 
-[demo](https://ivadimko.github.io/react-app/)
+[demo](https://ivadimko.github.io/digital-clock/)

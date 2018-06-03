@@ -1,0 +1,120 @@
+// There are styles for HTML tags without classes, e.g. <a>, <html>
+// and also styles for elements that doesn't deserve a separate SCSS file like .g-recaptcha
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+li:focus {
+  outline: none;
+}
+
+img {
+  display: inline-block;
+  border: none;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+b {
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+blockquote {
+  margin: 30px 0;
+  padding-left: 50px;
+  border-left: 1px solid #000;
+  font-weight: 600;
+}
+
+address {
+  font-style: normal;
+}
+
+figure {
+  margin: 0;
+}
+
+// forms
+input, textarea, button, select {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  vertical-align: top;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+input, textarea, button {
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// end forms
+
+.grid-container {
+  width: 100%;
+}
+
+.g-recaptcha {
+  pointer-events: none;
+  opacity: 0.01;
+}
